@@ -1,0 +1,22 @@
+{
+  "name": "cbcblock",
+  "version": "1.0.0",
+  "description": "China Bangladesh Concrete & Block Industry Website",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass sass/main.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shaadsifat/CBC-Block-Website.git"
+  },
+  "author": "Md Shaad Uddin Sifat",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shaadsifat/CBC-Block-Website/issues"
+  },
+  "homepage": "https://github.com/shaadsifat/CBC-Block-Website",
+  "devDependencies": {
+    "sass": "^1.91.0"
+  }
+}
