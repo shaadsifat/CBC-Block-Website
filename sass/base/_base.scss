@@ -7,9 +7,29 @@
 }
 
 html {
-  font-size: 62.5%;
+  font-size: 62.5%; //10px
+
+  @include respond(tabl) {
+    font-size: 56.25%; // 9px
+  }
+  @include respond(tabp) {
+    font-size: 50%; // 8px
+  }
+  @include respond(dskb) {
+    font-size: 75%; // 12px
+  }
 }
 
 body {
   box-sizing: border-box;
+  padding: 3rem;
+
+  @include respond(tabl) {
+    padding: 0;
+  }
+}
+
+::selection {
+  background-color: $color-primary;
+  color: $color-white;
 }

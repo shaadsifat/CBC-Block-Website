@@ -1,0 +1,43 @@
+@mixin clearfix {
+  &::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+}
+
+@mixin absCenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+// 0-600px phone
+// 600-900 tab potrate
+// 900-1200 tab landscape
+// 1800px + big desktop
+
+@mixin respond($breakpoint) {
+  //600px
+  @if $breakpoint == ph {
+    @media only screen and (max-width: 37.5em) {
+      @content;
+    }
+  } @else if $breakpoint == tabp {
+    //900px
+    @media only screen and (max-width: 56.25em) {
+      @content;
+    }
+  } @else if $breakpoint == tabl {
+    //1200px
+    @media only screen and (max-width: 75em) {
+      @content;
+    }
+  } @else if $breakpoint == dskb {
+    //1800px
+    @media only screen and (min-width: 112.5em) {
+      @content;
+    }
+  }
+}
