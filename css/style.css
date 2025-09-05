@@ -113,6 +113,7 @@ body {
 }
 
 .heading-primary {
+  width: 90vw;
   color: #fff;
   text-transform: uppercase;
   backface-visibility: hidden;
@@ -135,12 +136,48 @@ body {
   display: block;
   font-size: 2rem;
   font-weight: 700;
-  letter-spacing: 1.75rem;
+  letter-spacing: 2rem;
   animation: moveInRight 1s ease-out;
 }
 @media only screen and (max-width: 37.5em) {
   .heading-primary--sub {
     letter-spacing: 0.6rem;
+  }
+}
+.heading-primary__2 {
+  width: 90vw;
+  color: #fff;
+  text-transform: uppercase;
+  backface-visibility: hidden;
+}
+.heading-primary__2--main {
+  display: block;
+  font-weight: 400;
+  animation: moveInLeft 1s ease-out;
+}
+.heading-primary__2--sub {
+  display: block;
+  font-weight: 700;
+  animation: moveInRight 1s ease-out;
+}
+.heading-primary__2__about--main {
+  font-size: 6rem;
+  letter-spacing: 1rem;
+}
+@media only screen and (max-width: 37.5em) {
+  .heading-primary__2__about--main {
+    font-size: 4rem;
+  }
+}
+.heading-primary__2__about--sub {
+  font-size: 2rem;
+  letter-spacing: 3rem;
+  margin-left: 2rem;
+}
+@media only screen and (max-width: 37.5em) {
+  .heading-primary__2__about--sub {
+    letter-spacing: 1.9rem;
+    margin-left: 0;
   }
 }
 
@@ -167,6 +204,29 @@ body {
 }
 @media only screen and (max-width: 56.25em) {
   .heading-secondary:hover {
+    transform: skewY(0) skewX(0) scale(1);
+  }
+}
+.heading-secondary__2 {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: inline-block;
+  letter-spacing: 0.2rem;
+  color: #fff;
+  transition: all 0.2s;
+}
+@media only screen and (max-width: 56.25em) {
+  .heading-secondary__2 {
+    font-size: 3rem;
+  }
+}
+.heading-secondary__2:hover {
+  transform: skewY(2deg) skewX(15deg) scale(1.1);
+  text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+@media only screen and (max-width: 56.25em) {
+  .heading-secondary__2:hover {
     transform: skewY(0) skewX(0) scale(1);
   }
 }
@@ -422,6 +482,59 @@ body {
 }
 @media only screen and (max-width: 56.25em) {
   .header__text-box {
+    top: 47%;
+  }
+}
+
+.page-header {
+  height: 40rem;
+  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/CBC_brick_wall.jpg);
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 30rem, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 30rem, 0 100%);
+}
+@media only screen and (max-width: 56.25em) {
+  .page-header {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 30rem, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 30rem, 0 100%);
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .page-header {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 30rem, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 30rem, 0 100%);
+  }
+}
+.page-header__logo-box {
+  position: absolute;
+  top: 3rem;
+  left: 3rem;
+}
+@media only screen and (max-width: 37.5em) {
+  .page-header__logo-box {
+    top: 2rem;
+    right: 2rem;
+  }
+}
+.page-header__logo {
+  height: 8rem;
+}
+.page-header__text-box {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+@media only screen and (max-width: 37.5em) {
+  .page-header__text-box {
+    top: 47%;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  .page-header__text-box {
     top: 47%;
   }
 }
@@ -1209,11 +1322,19 @@ body {
 .section-about {
   background-color: #f7f7f7;
   padding: 25rem 0;
-  margin-top: -20vh;
+  margin-top: -10rem;
 }
 @media only screen and (max-width: 56.25em) {
   .section-about {
     padding: 20rem 0 20rem 0;
+  }
+}
+.section-about--about {
+  padding: 20rem 0 12rem 0;
+}
+@media only screen and (max-width: 56.25em) {
+  .section-about--about {
+    padding: 15rem 0 10rem 0;
   }
 }
 
@@ -1252,6 +1373,14 @@ body {
 @media only screen and (max-width: 56.25em) {
   .section-stories {
     padding: 10rem 0 2rem 0;
+  }
+}
+.section-stories--about {
+  padding: 12rem 0;
+}
+@media only screen and (max-width: 56.25em) {
+  .section-stories--about {
+    padding: 10rem 0;
   }
 }
 
@@ -1295,6 +1424,42 @@ body {
     width: 100%;
     padding: 3rem;
   }
+}
+
+.about-img {
+  display: inline-block;
+  width: 100%;
+  border-radius: 3px;
+  box-shadow: 0rem 1rem 2rem rgba(0, 0, 0, 0.2);
+  transition: all 0.3s;
+}
+.about-img:not(:last-child) {
+  margin-bottom: 2rem;
+}
+.about-img:hover {
+  box-shadow: 0rem 2rem 4rem rgba(0, 0, 0, 0.2);
+  transform: scale(1.07);
+}
+
+.section-cert {
+  padding: 12rem 0;
+  background-image: linear-gradient(to right bottom, #7ed56f, #28b485);
+}
+@media only screen and (max-width: 56.25em) {
+  .section-cert {
+    padding: 10rem 0;
+  }
+}
+.section-cert .cert-img {
+  display: inline-block;
+  width: 100%;
+  border-radius: 3px;
+  box-shadow: 0rem 1rem 2rem rgba(0, 0, 0, 0.2);
+  transition: all 0.3s;
+}
+.section-cert .cert-img:hover {
+  box-shadow: 0rem 2rem 4rem rgba(0, 0, 0, 0.2);
+  transform: scale(1.02);
 }
 
 /*# sourceMappingURL=style.css.map */

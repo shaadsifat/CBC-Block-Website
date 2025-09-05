@@ -1,0 +1,55 @@
+.page-header {
+  height: 40rem;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($color-primary-light, 0.8),
+      rgba($color-primary-dark, 0.8)
+    ),
+    url(../img/CBC_brick_wall.jpg);
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 30rem, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 30rem, 0 100%);
+
+  @include respond(tabp) {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 30rem, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 30rem, 0 100%);
+  }
+
+  @include respond(ph) {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 30rem, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 30rem, 0 100%);
+  }
+
+  &__logo-box {
+    position: absolute;
+    top: 3rem;
+    left: 3rem;
+
+    @include respond(ph) {
+      top: 2rem;
+      right: 2rem;
+    }
+  }
+
+  &__logo {
+    height: 8rem;
+  }
+
+  &__text-box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+    @include respond(ph) {
+      top: 47%;
+    }
+
+    @include respond(tabp) {
+      top: 47%;
+    }
+  }
+}

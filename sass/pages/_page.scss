@@ -1,10 +1,18 @@
 .section-about {
   background-color: $color-grey-light;
   padding: 25rem 0;
-  margin-top: -20vh;
+  margin-top: -10rem;
 
   @include respond(tabp) {
     padding: 20rem 0 20rem 0;
+  }
+
+  &--about {
+    padding: 20rem 0 12rem 0;
+
+    @include respond(tabp) {
+      padding: 15rem 0 10rem 0;
+    }
   }
 }
 
@@ -46,6 +54,14 @@
 
   @include respond(tabp) {
     padding: 10rem 0 2rem 0;
+  }
+
+  &--about {
+    padding: 12rem 0;
+
+    @include respond(tabp) {
+      padding: 10rem 0;
+    }
   }
 }
 
@@ -105,6 +121,49 @@
     @include respond(tabp) {
       width: 100%;
       padding: 3rem;
+    }
+  }
+}
+
+.about-img {
+  display: inline-block;
+  width: 100%;
+  border-radius: 3px;
+  box-shadow: 0rem 1rem 2rem rgba($color-black, 0.2);
+  transition: all 0.3s;
+
+  &:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+
+  &:hover {
+    box-shadow: 0rem 2rem 4rem rgba($color-black, 0.2);
+    transform: scale(1.07);
+  }
+}
+
+.section-cert {
+  padding: 12rem 0;
+  background-image: linear-gradient(
+    to right bottom,
+    $color-primary-light,
+    $color-primary-dark
+  );
+
+  @include respond(tabp) {
+    padding: 10rem 0;
+  }
+
+  & .cert-img {
+    display: inline-block;
+    width: 100%;
+    border-radius: 3px;
+    box-shadow: 0rem 1rem 2rem rgba($color-black, 0.2);
+    transition: all 0.3s;
+
+    &:hover {
+      box-shadow: 0rem 2rem 4rem rgba($color-black, 0.2);
+      transform: scale(1.02);
     }
   }
 }
