@@ -154,7 +154,30 @@
     padding: 10rem 0;
   }
 
-  & .cert-img {
+  .cert-img {
+    display: inline-block;
+    width: 100%;
+    border-radius: 3px;
+    box-shadow: 0rem 1rem 2rem rgba($color-black, 0.2);
+    transition: all 0.3s;
+
+    &:hover {
+      box-shadow: 0rem 2rem 4rem rgba($color-black, 0.2);
+      transform: scale(1.02);
+    }
+  }
+}
+
+.section-gallery {
+  background-color: $color-grey-light;
+  padding: 20rem 0 12rem 0;
+  margin-top: -10rem;
+
+  @include respond(tabp) {
+    padding: 15rem 0 10rem 0;
+  }
+
+  .gallery-img {
     display: inline-block;
     width: 100%;
     border-radius: 3px;

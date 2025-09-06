@@ -77,6 +77,28 @@ body {
         }
       }
     }
+
+    &__gallery {
+      &--main {
+        font-size: 6rem;
+        letter-spacing: 1rem;
+
+        @include respond(ph) {
+          font-size: 4rem;
+        }
+      }
+
+      &--sub {
+        font-size: 2rem;
+        letter-spacing: 2.5rem;
+        margin-left: 1.5rem;
+
+        @include respond(ph) {
+          letter-spacing: 1.4rem;
+          margin-left: 0.5rem;
+        }
+      }
+    }
   }
 }
 
