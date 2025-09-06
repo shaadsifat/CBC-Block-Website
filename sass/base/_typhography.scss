@@ -99,6 +99,28 @@ body {
         }
       }
     }
+
+    &__contact {
+      &--main {
+        font-size: 6rem;
+        letter-spacing: 0.8rem;
+
+        @include respond(ph) {
+          font-size: 4rem;
+        }
+      }
+
+      &--sub {
+        font-size: 2rem;
+        letter-spacing: 4rem;
+        margin-left: 3rem;
+
+        @include respond(ph) {
+          letter-spacing: 2.5rem;
+          margin-left: 2rem;
+        }
+      }
+    }
   }
 }
 
@@ -178,5 +200,14 @@ body {
     @include respond(tabp) {
       margin-bottom: 1rem;
     }
+  }
+}
+
+.paragraph-2 {
+  font-size: $default-font-size;
+  letter-spacing: 1px;
+
+  @include respond(tabp) {
+    font-size: 2rem;
   }
 }
