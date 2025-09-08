@@ -1043,7 +1043,6 @@ body {
   position: absolute;
   z-index: 1;
   transition: all 0.2s;
-  border: 1px solid #55c57a;
   outline-offset: 1rem;
 }
 @media only screen and (max-width: 56.25em) {
