@@ -180,6 +180,26 @@ body {
     margin-left: 0;
   }
 }
+.heading-primary__2__product--main {
+  font-size: 6rem;
+  letter-spacing: 0.8rem;
+}
+@media only screen and (max-width: 37.5em) {
+  .heading-primary__2__product--main {
+    font-size: 3.5rem;
+  }
+}
+.heading-primary__2__product--sub {
+  font-size: 2rem;
+  letter-spacing: 5.3rem;
+  margin-left: 4rem;
+}
+@media only screen and (max-width: 37.5em) {
+  .heading-primary__2__product--sub {
+    letter-spacing: 3rem;
+    margin-left: 2rem;
+  }
+}
 .heading-primary__2__gallery--main {
   font-size: 6rem;
   letter-spacing: 1rem;
@@ -829,11 +849,56 @@ body {
 .card__picture--1 {
   background-image: linear-gradient(to bottom, transparent, transparent, rgba(126, 213, 111, 0.3)), url(../img/product/01.jpg);
 }
+.card__picture--2 {
+  background-image: linear-gradient(to bottom, transparent, transparent, rgba(126, 213, 111, 0.3)), url(../img/product/02.jpg);
+}
+.card__picture--3 {
+  background-image: linear-gradient(to bottom, transparent, transparent, rgba(126, 213, 111, 0.3)), url(../img/product/03.jpg);
+}
+.card__picture--4 {
+  background-image: linear-gradient(to bottom, transparent, transparent, rgba(126, 213, 111, 0.3)), url(../img/product/04.jpg);
+}
+.card__picture--5 {
+  background-image: linear-gradient(to bottom, transparent, transparent, rgba(126, 213, 111, 0.3)), url(../img/product/05.jpg);
+}
+.card__picture--6 {
+  background-image: linear-gradient(to bottom, transparent, transparent, rgba(126, 213, 111, 0.3)), url(../img/product/06.jpg);
+}
+.card__picture--7 {
+  background-image: linear-gradient(to bottom, transparent, transparent, rgba(126, 213, 111, 0.3)), url(../img/product/07.jpg);
+}
 .card__picture--8 {
   background-image: linear-gradient(to bottom, transparent, transparent, rgba(126, 213, 111, 0.3)), url(../img/product/08.jpg);
 }
+.card__picture--9 {
+  background-image: linear-gradient(to bottom, transparent, transparent, rgba(126, 213, 111, 0.3)), url(../img/product/09.jpg);
+}
+.card__picture--10 {
+  background-image: linear-gradient(to bottom, transparent, transparent, rgba(126, 213, 111, 0.3)), url(../img/product/10.jpg);
+}
 .card__picture--11 {
   background-image: linear-gradient(to bottom, transparent, transparent, rgba(126, 213, 111, 0.3)), url(../img/product/11.jpg);
+}
+.card__picture--12 {
+  background-image: linear-gradient(to bottom, transparent, transparent, rgba(126, 213, 111, 0.3)), url(../img/product/12.jpg);
+}
+.card__picture--13 {
+  background-image: linear-gradient(to bottom, transparent, transparent, rgba(126, 213, 111, 0.3)), url(../img/product/13.jpg);
+}
+.card__picture--14 {
+  background-image: linear-gradient(to bottom, transparent, transparent, rgba(126, 213, 111, 0.3)), url(../img/product/14.jpg);
+}
+.card__picture--15 {
+  background-image: linear-gradient(to bottom, transparent, transparent, rgba(126, 213, 111, 0.3)), url(../img/product/15.jpg);
+}
+.card__picture--16 {
+  background-image: linear-gradient(to bottom, transparent, transparent, rgba(126, 213, 111, 0.3)), url(../img/product/16.jpg);
+}
+.card__picture--17 {
+  background-image: linear-gradient(to bottom, transparent, transparent, rgba(126, 213, 111, 0.3)), url(../img/product/17.jpg);
+}
+.card__picture--18 {
+  background-image: linear-gradient(to bottom, transparent, transparent, rgba(126, 213, 111, 0.3)), url(../img/product/18.jpg);
 }
 @media only screen and (max-width: 56.25em), only screen and (hover: none) {
   .card {
@@ -1418,6 +1483,12 @@ body {
   .section-product {
     padding: 20rem 0 10rem 0;
   }
+}
+
+.section-product-2 {
+  background-color: #f7f7f7;
+  padding: 15rem 0 4rem 0;
+  margin-top: -10rem;
 }
 
 .section-stories {
