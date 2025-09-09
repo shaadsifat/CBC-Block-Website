@@ -1,0 +1,6 @@
+# Force HTTPS and remove www
+RewriteEngine On
+
+# Redirect www to non-www
+RewriteCond %{HTTP_HOST} ^www\.cbcblock\.com [NC]
+RewriteRule ^(.*)$ https://cbcblock.com/$1 [L,R=301]
